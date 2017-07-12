@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.gottfaust.wbwwdc</groupId>
-    <artifactId>WBWWDC</artifactId>
+    <groupId>org.gottfaust.wwdc</groupId>
+    <artifactId>wwdc</artifactId>
     <version>1.0.0</version>
 
     <packaging>war</packaging>
-    <description>WBWWDC Java REST Service</description>
+    <description>wwdc Java REST Service</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -84,7 +84,7 @@
     </dependencies>
 
     <properties>
-        <start-class>${project.groupId}.${project.artifactId}.org.gottfaust.WBWWDC.Application</start-class>
+        <start-class>${project.groupId}.${project.artifactId}.org.gottfaust.wwdc.Application</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
