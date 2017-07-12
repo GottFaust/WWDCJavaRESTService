@@ -1,6 +1,6 @@
-package org.gottfaust.wwdc.model.abstracts;
+package org.gottfaust.WWDC.model.abstracts;
 
-public abstract class AwwdcException extends Exception {
+public abstract class AWWDCException extends Exception {
 
     /** The self link **/
     private String self;
@@ -10,7 +10,7 @@ public abstract class AwwdcException extends Exception {
      * @param self
      * @param message
      */
-    public AwwdcException(String self, String message) {
+    public AWWDCException(String self, String message) {
         super(message);
         this.self = self;
     }
@@ -21,7 +21,7 @@ public abstract class AwwdcException extends Exception {
      * @param message
      * @param throwable
      */
-    public AwwdcException(String self, String message, Throwable throwable){
+    public AWWDCException(String self, String message, Throwable throwable){
         super(message, throwable);
         this.self = self;
     }

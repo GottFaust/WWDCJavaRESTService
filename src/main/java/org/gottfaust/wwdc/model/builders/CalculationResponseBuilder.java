@@ -1,8 +1,8 @@
-package org.gottfaust.wwdc.model.builders;
+package org.gottfaust.WWDC.model.builders;
 
-import org.gottfaust.wwdc.model.interfaces.IwwdcResponseBuilder;
+import org.gottfaust.WWDC.model.interfaces.IWWDCResponseBuilder;
 
-public class CalculationResponseBuilder implements IwwdcResponseBuilder {
+public class CalculationResponseBuilder implements IWWDCResponseBuilder {
 
     /** The IHateos self link **/
     public String self;

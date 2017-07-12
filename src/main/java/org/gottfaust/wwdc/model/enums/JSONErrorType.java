@@ -1,4 +1,4 @@
-package org.gottfaust.wwdc.model.enums;
+package org.gottfaust.WWDC.model.enums;
 
 public enum JSONErrorType {
     UNKNOWN,

@@ -1,8 +1,8 @@
-package org.gottfaust.wwdc.controller.interfaces;
+package org.gottfaust.WWDC.controller.interfaces;
 
 import java.util.regex.Pattern;
 
-public interface IwwdcController {
+public interface IWWDCController {
 
     /**
      * Validates a name only includes letters, spaces, 's and -s

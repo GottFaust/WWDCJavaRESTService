@@ -1,6 +1,6 @@
-package org.gottfaust.wwdc.model.interfaces;
+package org.gottfaust.WWDC.model.interfaces;
 
-import org.gottfaust.wwdc.model.enums.JSONErrorType;
+import org.gottfaust.WWDC.model.enums.JSONErrorType;
 
 import java.util.HashMap;
 

@@ -1,11 +1,11 @@
-package org.gottfaust.wwdc.model.responses;
+package org.gottfaust.WWDC.model.responses;
 
-import org.gottfaust.wwdc.model.builders.CalculationResponseBuilder;
-import org.gottfaust.wwdc.model.interfaces.IwwdcResponse;
+import org.gottfaust.WWDC.model.builders.CalculationResponseBuilder;
+import org.gottfaust.WWDC.model.interfaces.IWWDCResponse;
 
 import java.util.HashMap;
 
-public class CalculationResponse implements IwwdcResponse {
+public class CalculationResponse implements IWWDCResponse {
 
     /** The IHateos self link **/
     private String self;

@@ -1,7 +1,7 @@
-package org.gottfaust.wwdc.model;
+package org.gottfaust.WWDC.model;
 
-import org.gottfaust.wwdc.model.abstracts.AJSONError;
-import org.gottfaust.wwdc.model.builders.DatasourceJSONErrorBuilder;
+import org.gottfaust.WWDC.model.abstracts.AJSONError;
+import org.gottfaust.WWDC.model.builders.DatasourceJSONErrorBuilder;
 
 public class DatasourceJSONError extends AJSONError {
 

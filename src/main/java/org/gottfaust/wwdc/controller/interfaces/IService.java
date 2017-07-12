@@ -1,4 +1,4 @@
-package org.gottfaust.wwdc.controller.interfaces;
+package org.gottfaust.WWDC.controller.interfaces;
 
 
 import java.util.concurrent.*;

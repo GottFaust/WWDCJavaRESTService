@@ -1,4 +1,4 @@
-package org.gottfaust.wwdc.model.submissions;
+package org.gottfaust.WWDC.model.submissions;
 
 import java.util.regex.Pattern;
 

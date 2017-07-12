@@ -1,4 +1,4 @@
-package org.gottfaust.wwdc;
+package org.gottfaust.WWDC;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

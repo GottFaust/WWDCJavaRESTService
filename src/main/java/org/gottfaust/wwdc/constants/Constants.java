@@ -1,4 +1,4 @@
-package org.gottfaust.wwdc.constants;
+package org.gottfaust.WWDC.constants;
 
 public class Constants {
 

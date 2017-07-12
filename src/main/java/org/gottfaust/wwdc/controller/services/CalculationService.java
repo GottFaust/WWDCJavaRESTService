@@ -1,7 +1,7 @@
-package org.gottfaust.wwdc.controller.services;
+package org.gottfaust.WWDC.controller.services;
 
-import org.gottfaust.wwdc.controller.interfaces.IwwdcService;
+import org.gottfaust.WWDC.controller.interfaces.IWWDCService;
 
-public class CalculationService implements IwwdcService {
+public class CalculationService implements IWWDCService {
 
 }

@@ -1,16 +1,16 @@
-package org.gottfaust.wwdc.model.factories;
+package org.gottfaust.WWDC.model.factories;
 
-import org.gottfaust.wwdc.model.DataJSONError;
-import org.gottfaust.wwdc.model.DatasourceJSONError;
-import org.gottfaust.wwdc.model.ProcessingJSONError;
-import org.gottfaust.wwdc.model.UnknownJSONError;
-import org.gottfaust.wwdc.model.abstracts.AJSONError;
-import org.gottfaust.wwdc.model.builders.DataJSONErrorBuilder;
-import org.gottfaust.wwdc.model.builders.DatasourceJSONErrorBuilder;
-import org.gottfaust.wwdc.model.builders.ProcessingJSONErrorBuilder;
-import org.gottfaust.wwdc.model.builders.UnknownJSONErrorBuilder;
-import org.gottfaust.wwdc.model.enums.JSONErrorType;
-import org.gottfaust.wwdc.model.interfaces.IJSONErrorBuilder;
+import org.gottfaust.WWDC.model.DataJSONError;
+import org.gottfaust.WWDC.model.DatasourceJSONError;
+import org.gottfaust.WWDC.model.ProcessingJSONError;
+import org.gottfaust.WWDC.model.UnknownJSONError;
+import org.gottfaust.WWDC.model.abstracts.AJSONError;
+import org.gottfaust.WWDC.model.builders.DataJSONErrorBuilder;
+import org.gottfaust.WWDC.model.builders.DatasourceJSONErrorBuilder;
+import org.gottfaust.WWDC.model.builders.ProcessingJSONErrorBuilder;
+import org.gottfaust.WWDC.model.builders.UnknownJSONErrorBuilder;
+import org.gottfaust.WWDC.model.enums.JSONErrorType;
+import org.gottfaust.WWDC.model.interfaces.IJSONErrorBuilder;
 
 public class JSONErrorFactory {
 

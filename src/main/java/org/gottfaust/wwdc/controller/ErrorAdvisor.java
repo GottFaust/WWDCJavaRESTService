@@ -1,16 +1,16 @@
-package org.gottfaust.wwdc.controller;
+package org.gottfaust.WWDC.controller;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.gottfaust.wwdc.controller.interfaces.IHateos;
-import org.gottfaust.wwdc.model.DataJSONError;
-import org.gottfaust.wwdc.model.UnknownJSONError;
-import org.gottfaust.wwdc.model.builders.DataJSONErrorBuilder;
-import org.gottfaust.wwdc.model.builders.UnknownJSONErrorBuilder;
-import org.gottfaust.wwdc.model.enums.JSONErrorType;
-import org.gottfaust.wwdc.model.exceptions.wwdcAuthException;
-import org.gottfaust.wwdc.model.exceptions.wwdcDatabaseException;
-import org.gottfaust.wwdc.model.exceptions.wwdcSubmissionException;
-import org.gottfaust.wwdc.model.factories.JSONErrorFactory;
+import org.gottfaust.WWDC.controller.interfaces.IHateos;
+import org.gottfaust.WWDC.model.DataJSONError;
+import org.gottfaust.WWDC.model.UnknownJSONError;
+import org.gottfaust.WWDC.model.builders.DataJSONErrorBuilder;
+import org.gottfaust.WWDC.model.builders.UnknownJSONErrorBuilder;
+import org.gottfaust.WWDC.model.enums.JSONErrorType;
+import org.gottfaust.WWDC.model.exceptions.WWDCAuthException;
+import org.gottfaust.WWDC.model.exceptions.WWDCDatabaseException;
+import org.gottfaust.WWDC.model.exceptions.WWDCSubmissionException;
+import org.gottfaust.WWDC.model.factories.JSONErrorFactory;
 import org.jboss.logging.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.HashMap;
 
-import static org.gottfaust.wwdc.constants.Constants.REALLY_REALLY_BAD;
+import static org.gottfaust.WWDC.constants.Constants.REALLY_REALLY_BAD;
 
 
 @ControllerAdvice
@@ -33,8 +33,8 @@ public class ErrorAdvisor {
      * @param ex Exception
      * @return ResponseEntity with IHateos
      */
-    @ExceptionHandler(wwdcDatabaseException.class)
-    ResponseEntity<IHateos> handleDatabaseException(wwdcDatabaseException ex) {
+    @ExceptionHandler(WWDCDatabaseException.class)
+    ResponseEntity<IHateos> handleDatabaseException(WWDCDatabaseException ex) {
 
         //Log the error
         LOGGER.fatal("DATABASE EXCEPTION", ExceptionUtils.getRootCause(ex));
@@ -53,8 +53,8 @@ public class ErrorAdvisor {
      * @param ex Exception
      * @return ResponseEntity with IHateos
      */
-    @ExceptionHandler(wwdcSubmissionException.class)
-    ResponseEntity<IHateos> handleSubmissionException(wwdcSubmissionException ex) {
+    @ExceptionHandler(WWDCSubmissionException.class)
+    ResponseEntity<IHateos> handleSubmissionException(WWDCSubmissionException ex) {
 
         //Log the error
         LOGGER.fatal("SUBMISSION EXCEPTION", ExceptionUtils.getRootCause(ex));
@@ -73,8 +73,8 @@ public class ErrorAdvisor {
      * @param ex Exception
      * @return ResponseEntity with IHateos
      */
-    @ExceptionHandler(wwdcAuthException.class)
-    ResponseEntity<IHateos> handleAuthException(wwdcAuthException ex) {
+    @ExceptionHandler(WWDCAuthException.class)
+    ResponseEntity<IHateos> handleAuthException(WWDCAuthException ex) {
 
         //Log the error
         LOGGER.fatal("AUTH EXCEPTION", ExceptionUtils.getRootCause(ex));

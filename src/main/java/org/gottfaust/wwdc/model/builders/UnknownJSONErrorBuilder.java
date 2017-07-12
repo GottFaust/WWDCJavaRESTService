@@ -1,7 +1,7 @@
-package org.gottfaust.wwdc.model.builders;
+package org.gottfaust.WWDC.model.builders;
 
-import org.gottfaust.wwdc.model.abstracts.AJSONErrorBuilder;
-import org.gottfaust.wwdc.model.enums.JSONErrorType;
+import org.gottfaust.WWDC.model.abstracts.AJSONErrorBuilder;
+import org.gottfaust.WWDC.model.enums.JSONErrorType;
 
 import java.util.HashMap;
 

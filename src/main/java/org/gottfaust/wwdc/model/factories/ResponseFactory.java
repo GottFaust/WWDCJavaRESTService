@@ -1,24 +1,24 @@
-package org.gottfaust.wwdc.model.factories;
+package org.gottfaust.WWDC.model.factories;
 
-import org.gottfaust.wwdc.model.builders.*;
-import org.gottfaust.wwdc.model.interfaces.IwwdcResponseBuilder;
-import org.gottfaust.wwdc.model.responses.*;
-import org.gottfaust.wwdc.model.interfaces.IwwdcResponse;
+import org.gottfaust.WWDC.model.builders.*;
+import org.gottfaust.WWDC.model.interfaces.IWWDCResponseBuilder;
+import org.gottfaust.WWDC.model.responses.*;
+import org.gottfaust.WWDC.model.interfaces.IWWDCResponse;
 
 public class ResponseFactory {
 
     /**
      * Factory method to build proper responses from the supplied builder
-     * @param builder IwwdcResponseBuilder to use to build the response
+     * @param builder IWWDCResponseBuilder to use to build the response
      * @return Built response or null on failure
      */
-    public static IwwdcResponse buildResponse(IwwdcResponseBuilder builder){
+    public static IWWDCResponse buildResponse(IWWDCResponseBuilder builder){
 
         //Get the builder's class
         String builderClass = builder.getClass().getSimpleName();
 
         //Setup the response
-        IwwdcResponse response = null;
+        IWWDCResponse response = null;
 
         //Switch on builder type and construct the appropriate response
         switch(builderClass){
