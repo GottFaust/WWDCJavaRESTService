@@ -10,12 +10,16 @@ public class CalculationResponse implements IWWDCResponse {
     /** The IHateos self link **/
     private String self;
 
+    /** The calculation results **/
+    public String results;
+
     /**
      * CTOR
      * @param builder CalculationResponseBuilder to build with
      */
     public CalculationResponse(CalculationResponseBuilder builder){
         this.self = builder.self;
+        this.results = builder.results;
     }
 
     @Override

@@ -25,6 +25,7 @@ public class CalculationController implements IWWDCController {
     /** The log4j Logger **/
     private static final Logger LOGGER = Logger.getLogger(CalculationController.class);
 
+    @CrossOrigin
     @RequestMapping(value = "/api/calculate", method = RequestMethod.POST)
     public ResponseEntity getQueue(HttpServletRequest request,
                                    @RequestBody(required = false) CalculationSubmission submission)
@@ -33,7 +34,7 @@ public class CalculationController implements IWWDCController {
             WWDCDatabaseException
     {
         //The IHateos self link
-        String self = "/api/queue";
+        String self = "/api/calculate";
 
         //Validate the submission
         if(submission != null && !submission.validate()){
@@ -43,6 +44,7 @@ public class CalculationController implements IWWDCController {
         //Setup the builder
         CalculationResponseBuilder builder = new CalculationResponseBuilder();
         builder.self = self;
+        builder.results = "TEST RESULT!";
 
         //Setup the final response
         IWWDCResponse response = ResponseFactory.buildResponse(builder);
